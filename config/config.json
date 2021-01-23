@@ -1,11 +1,19 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
+    "dialect": "mssql",
+    "dialectOptions": {
+      "driver": "SQL Server Native Client 11.0",
+      "trustedConnection": "true",
+      "validateBulkLoadParameters": true
+    },
+    "username": "user",
+    "password": "123456789",
     "database": "sequelize",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "port": 1433,
+    "logging": "true"
   },
+
   "test": {
     "username": "root",
     "password": null,
